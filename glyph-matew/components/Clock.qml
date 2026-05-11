@@ -59,7 +59,7 @@ Item {
                         text: root.timeStr.charAt(index)
                         font.family: root.fontName
                         font.pixelSize: 150
-                        color: root.textColor
+                        color: "#B9F0FA"
                         horizontalAlignment: Text.AlignHCenter
                     }
                 }
@@ -75,14 +75,14 @@ Item {
                 text: Qt.formatDate(new Date(), "ddd, d MMM").toUpperCase()
                 font.family: root.fontName
                 font.pixelSize: 32
-                color: root.textColor
+                color: "#B9F0FA"
                 opacity: 0.9
                 topPadding: -10
             }
             Row {
                 spacing: 12; topPadding: 10
-                Text { text: root.getOSLogo(root.currentHostName); font.family: root.symbolFontName; color: root.textColor; font.pixelSize: 22; visible: text !== ""; anchors.verticalCenter: parent.verticalCenter; anchors.verticalCenterOffset: -3 }
-                Text { text: root.currentHostName.toUpperCase(); font.family: root.fontName; font.pixelSize: 22; color: root.textColor; opacity: 0.8; anchors.verticalCenter: parent.verticalCenter }
+                Text { text: root.getOSLogo(root.currentHostName); font.family: root.symbolFontName; color: "#B9F0FA"; font.pixelSize: 22; visible: text !== ""; anchors.verticalCenter: parent.verticalCenter; anchors.verticalCenterOffset: -3 }
+                Text { text: root.currentHostName.toUpperCase(); font.family: root.fontName; font.pixelSize: 22; color: "#B9F0FA"; opacity: 0.8; anchors.verticalCenter: parent.verticalCenter }
             }
         }
     }

@@ -108,4 +108,5 @@
         },
         "on-click": "swaync-client -t -sw"
     }
+    
 }

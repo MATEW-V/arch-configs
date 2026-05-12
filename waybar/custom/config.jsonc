@@ -17,21 +17,24 @@
 	],
 
 "modules-center": [
-	"custom/power",
-	"custom/separator#dot-line",
 	"hyprland/workspaces#roman",
 	"custom/separator#dot-line",
 	"group/notify"
 	],
 
 "modules-right": [
-	"network",
+	"custom/power",
 	"custom/separator#blank",
 	"custom/separator#line",  
-    "group/motherboard",
+    "cpu",
+    "custom/separator#blank",
+	"memory",
+    "custom/separator#blank",
+	"temperature",
+    "custom/separator#blank",
 	"custom/separator#dot-line",
 	"custom/separator#blank", 
-	"pulseaudio"
+    "pulseaudio"
 	],
 
     "hyprland/workspaces#roman": {
@@ -118,30 +121,19 @@
 
     "clock": {
     "interval": 60,
-    "format": " {:%I:%M %p},  {%Y}, {%B}, {%d}, {%A}",
+    "format": " {:%I:%M %p,  %Y, %B %d, %A}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
-        "mode": "year",
-        "mode-mon-col": 3,
-        "weeks-pos": "right",
+        "mode": "month",
         "on-scroll": 1,
         "format": {
-            "months": "<span color='#ffead3'><b>{}</b></span>",
-            "days": "<span color='#ecc6d9'><b>{}</b></span>",
-            "weeks": "<span color='#99ffdd'><b>W{:%V}</b></span>",
-            "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-            "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+            "months": "<span color='#ffffff'><b>{}</b></span>",
+            "days": "<span color='#919191'><b>{}</b></span>",
+            "weekdays": "<span color='#ffffff'><b>{}</b></span>",
+            "today": "<span color='#ffffff'><b><u>{}</u></b></span>"
             }
         }
     }, 
-    "group/motherboard": {
-	"orientation": "horizontal",
-	"modules": [
-		"cpu",
-		"memory",
-		"temperature"
-	]
-    },
 
     "temperature": {
     "interval": 5,

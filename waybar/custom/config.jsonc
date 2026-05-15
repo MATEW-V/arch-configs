@@ -6,26 +6,25 @@
 "spacing": 3,
 "fixed-center": true,
 "ipc": true,
-"margin-top": 3,
-"margin-left": 8,
-"margin-right": 8,
+"margin-top": 4,
+"margin-left": 2,
+"margin-right": 2,
 
 "modules-left": [
-	"clock",
-	"custom/separator#blank",
-	"tray"
+	"clock"
 	],
 
 "modules-center": [
+	"custom/power",
+	"custom/separator#dot-line",
 	"hyprland/workspaces#roman",
 	"custom/separator#dot-line",
 	"group/notify"
 	],
 
 "modules-right": [
-	"custom/power",
-	"custom/separator#blank",
-	"custom/separator#line",  
+	"tray",
+	"custom/separator#dot-line",  
     "cpu",
     "custom/separator#blank",
 	"memory",
